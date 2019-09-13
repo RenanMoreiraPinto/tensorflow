@@ -1,0 +1,30 @@
+item {
+    name: 'wheel valve'
+    id: 1
+}
+item {
+    
+    name: 'hammer'
+    id: 2
+}
+item {
+    name: 'wrench'
+    id: 3
+}
+item {
+    name: 'toolsholder'
+    id: 4
+}
+item {
+    name: 'hammer position'
+    id: 5
+}
+item {
+    name: 'screwdriver'
+    id: 6
+}
+item {
+    name: 'pliers'
+    id: 7
+}
+
