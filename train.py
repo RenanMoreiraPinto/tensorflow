@@ -41,7 +41,7 @@ Example usage:
         --input_config_path=train_input_config.pbtxt
 """
 import sys
-sys.path.append("/Users/Renan/Desktop/TensorFlow/models/research/slim")
+#sys.path.append("/Users/Renan/Desktop/TensorFlow/models/research/slim")
 import functools
 import json
 import os
