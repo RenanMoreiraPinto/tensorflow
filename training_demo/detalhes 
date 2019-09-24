@@ -1,0 +1,9 @@
+python xml_to_csv1.py 
+
+python generate_tfrecord.py --csv_input=annotations/train_labels.csv --output_path=annotations/train.record --image_dir=images/
+
+python generate_tfrecord.py --csv_input=annotations/test_labels.csv --output_path=annotations/test.record --image_dir=images/
+
+python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_inception_v2_coco.config
+
+python3 model_main.py --pipeline_config_path=training/ssd_inception_v2_coco.config --model_dir=training/  --num_train_steps=50000 --sample_1_of_n_eval_examples=1 --alsologtostderr
